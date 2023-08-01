@@ -34,7 +34,7 @@ public class ShopScript : MonoBehaviour, IStoreListener
 {
     IStoreController m_StoreContoller;
 
-    public consumableItems cItem;
+    public ConsumableItem cItem;
     public NonConsumableItem ncItem;
     public SubscriptionItem sItem;
 
