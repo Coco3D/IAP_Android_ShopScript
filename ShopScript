@@ -30,7 +30,7 @@ public class SubscriptionItem
     public int timeDuration;// in Days
 }
 
-public class ShopScript : MonoBehaviour, IStoreListener
+public class ShopScript : MonoBehaviour, IDetailedStoreListener
 {
     IStoreController m_StoreContoller;
 
@@ -224,6 +224,10 @@ public class ShopScript : MonoBehaviour, IStoreListener
         print("purchase failed" + failureReason);
     }
 
+    public void OnPurchaseFailed(Product product, PurchaseFailureDescription failureDescription)
+    {
+        print("purchase failed" + failureDescription);
+    }
     #endregion
 
 
